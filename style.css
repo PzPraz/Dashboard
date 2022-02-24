@@ -39,9 +39,6 @@ svg {
   height: 30px;
 }
 
-.main {
-}
-
 .user {
   display: flex;
   flex-direction: column;
@@ -124,12 +121,6 @@ li {
   gap: 20px;
 }
 
-.both {
-}
-
-.container {
-}
-
 .toph input {
   border-radius: 15px;
   outline: none;
@@ -204,4 +195,209 @@ li {
   justify-content: center;
 }
 
+.header {
+  position: relative;
+  box-shadow: 0 1px 0.1em rgba(0, 0, 0, 0.5);
+}
+
+.sidebar {
+  box-shadow: 1px 0 3px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
 /* Header done */
+
+.container {
+  display: grid;
+  background-color: #eaeaea;
+  grid-template-columns: 2.3fr 1fr;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+  padding-left: 15px;
+  padding-top: 65px;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0 0 0.1em rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-left: 10px solid var(--other-color);
+  font-family: "roboto";
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  padding-left: 24px;
+  padding-top: 40px;
+  position: relative;
+}
+
+.cardtext {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex: 4;
+}
+
+.cardtext span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.cardtext p {
+  font-size: 15px;
+  color: #6b7280;
+  line-height: 1.1em;
+}
+
+.svg {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.projects h4 {
+  font-family: "roboto";
+  position: absolute;
+  top: -30px;
+  left: -10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Main Container done */
+
+.rightbar {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  font-family: "roboto";
+}
+
+.announcements {
+  padding-top: 65px;
+  padding-left: 20px;
+  padding-right: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+}
+
+.announcements h3 {
+  position: absolute;
+  font-weight: bold;
+  font-size: 20px;
+  top: -30px;
+}
+
+.anntext {
+  background-color: white;
+  position: relative;
+  border-radius: 10px;
+  padding: 40px;
+  padding-left: 30px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  box-shadow: 0 0 0.1em rgba(0, 0, 0, 0.5);
+}
+
+.anntext span {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.ann-1,
+.ann-2,
+.ann-3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.anntext p {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.ann-1,
+.ann-2,
+.ann-3 {
+  gap: 5px;
+  padding-left: 5px;
+}
+
+.ann-1,
+.ann-2 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #6b7280;
+}
+
+svg {
+  cursor: pointer;
+}
+
+.trending {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+.trends {
+  background-color: #fff;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  box-shadow: 0 0 0.1em rgba(0, 0, 0, 0.5);
+}
+
+.img {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.img img {
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 0.1px solid black;
+}
+
+.trendtext {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.trendtext span {
+  font-size: 14px;
+}
+
+.trendtext p {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.trends {
+  position: relative;
+}
+
+.trends h4 {
+  position: absolute;
+  font-family: inherit;
+  font-weight: bold;
+  top: -28px;
+  font-size: 20px;
+}
