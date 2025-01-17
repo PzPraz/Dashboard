@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+:root{
+    --sidebar-color: #3b82f6;
+    --border-colorr: #eab308;
+}
+
+html, body, .dashboard{
+    height: 100%;
+    
+}
+
+.dashboard{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.dashboard-sidebar{
+    display: flex;
+    padding: 15px;
+    background-color: var(--sidebar-color);
+    color: white;
+}
+
+.sidebar{
+    
+}
+
+li{
+    list-style-type: none;
+}
+
+ul{
+    padding-inline-start: 0;
+}
+
+.sidebar-menu-items li{
+    font-size: 25px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-family: "Roboto";
+}
+
+.sidebar-menu-items li svg{
+    margin-left: 13px;
+}
+
+
+.sidebar-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.sidebar-header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.sidebar-header h1{
+    font-size: 30px;
+    font-family: 'Roboto';
+}
+
+.sidebar-header svg{
+    width: 100px;
+    height: 100px;
+}
+
+.sidebar-menu-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sidebar-settings{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    font-family: "Roboto";
+}
+
+.sidebar-settings{
+    margin-left: 13px;
+}
+
+.sidebar-settings li{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 15px;
+}
